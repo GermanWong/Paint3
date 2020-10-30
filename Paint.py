@@ -26,7 +26,9 @@ def drawcircle(start, end):
     up()
     goto(start.x, start.y)
     down()
+    begin_fill()
     circle((end.y - start.y)/2,360)
+    end_fill()
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
